@@ -1,37 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>StudyNest</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@800&display=swap" rel="stylesheet">
+    <title>StudyNest | Student Learning Resource Platform</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <a href="#Home" class="logo">
-            <span>Study</span><span style="color: red;">Hub</span></a>
-
+        <a href="#Home" class="brand">StudyNest</a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">&#9776;</label>
         <nav>
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
-                <li><a href="#Categories">Categories</a></li>
-                <li><a href="#Courses">Courses</a></li>
-                <li><a href="#Blog">Blog</a></li>
+                <li><a href="#Resources">Resources</a></li>
+                <li><a href="#Media">Media</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
-
-        <div class="nav-right">
-            <a href="#" class="search"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
-            <a href="#" class="login"><i class="fa-solid fa-circle-user"></i> Login</a>
-        </div>
+        <a href="#" class="login">Log in</a>
     </header>
-
     <main>
-
+        <section id="Home" class="hero">
+            <div class="hero-text">
+                <h1>Study smarter with every resource in one place</h1>
+                <p>Notes, past papers, video lessons and practice quizzes for every subject.</p>
+                <a href="#Resources" class="btn">Get Started</a>
+            </div>
+            <figure>
+                <img src="image/top.webp" alt="Students studying together at a table">
+                <figcaption>Students sharing notes in a study group.</figcaption>
+            </figure>
+        </section>
+        <!-- ABOUT -->
+        <section id="About">
+            <h2>Why StudyNest?</h2>
+            <div class="features">
+                <article>
+                    <h3>Notes and guides</h3>
+                    <p>Clear notes written by top students and checked by teachers.</p>
+                </article>
+                <article>
+                    <h3>Video lessons</h3>
+                    <p>Step-by-step videos that explain the hard topics.</p>
+                </article>
+                <article>
+                    <h3>Practice papers</h3>
+                    <p>Past papers and quizzes to test yourself before exams.</p>
+                </article>
+            </div>
+        </section>
+        <section id="Resources" class="dark">
+            <h2>Explore Our Resources</h2>
+            <div class="cards">
+                <article class="card">
+                   <img src="image/algebra.jpg" alt="Algebra">
+                    <h3>Algebra Essentials</h3>
+                    <p>Notes and worked examples.</p>
+                    <span>Notes · Free</span>
+                </article>
+                <article class="card">
+                    <img src="image/computer.jpg" alt="Laptop showing program code">
+                    <h3>Computer Science Papers</h3>
+                    <p>Past papers with marking schemes.</p>
+                    <span>Past Papers · Free</span>
+                </article>
+                <article class="card">
+                    <img src="image/force.jpg" alt="Physics equipment on a desk">
+                    <h3>Motion and Forces</h3>
+                    <p>A short video lesson series.</p>
+                    <span>Video · Free</span>
+                </article>
+                <article class="card">
+                    <img src="image/essay.jpg" alt="Person writing an essay">
+                    <h3>Essay Writing Guide</h3>
+                    <p>Plan, write and edit a strong essay.</p>
+                    <span>Study Guide · Free</span>
+                </article>
+                <article class="card">
+                    <img src="image/cell.jpg" alt="Microscope in a biology lab">
+                    <h3>Cell Biology Quizzes</h3>
+                    <p>Timed practice quizzes with answers.</p>
+                    <span>Quiz · Free</span>
+                </article>
+                <article class="card">
+                    <img src="image/report.jpg" alt="Team planning on a whiteboard">
+                    <h3>Report Templates</h3>
+                    <p>Ready-made layouts for reports.</p>
+                    <span>Templates · Free</span>
+                </article>
+            </div>
+        </section>
+        <section id="Media">
+            <h2>Learn Anywhere</h2>
+            <div class="media-layout">
+                <div>
+                    <h3>Sample video lesson</h3>
+                    <video controls>
+                        <source src="videos/JavaScript in 100 Seconds.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Study tip of the day</h3>
+                    <audio controls>
+                        <source src="audio/motivation.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </div>
+                <aside>
+                    <h3>Announcements</h3>
+                    <ul>
+                        <li>Revision packs are now online.</li>
+                        <li>New physics videos added.</li>
+                        <li>Study groups open Friday.</li>
+                    </ul>
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="https://dribbble.com/shots/23022559-Learning-website-design" target="_blank">Dribble</a></li>
+                        <li><a href="https://youtu.be/hKB-YGF14SY?si=-I7E7x4fLeVOiJ-l" target="_blank">YT_Course</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
     </main>
+    <!-- FOOTER -->
+    <footer id="Contact">
+        <div class="footer-grid">
+            <div>
+                <h3>StudyNest</h3>
+                <p>A free home for student learning resources.</p>
+            </div>
+            <div>
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#Resources">Resources</a></li>
+                    <li><a href="#Media">Media</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <ul>
+                    <li>StudyNest@gmail.com</li>
+                    <li>Kathmandu, Nepal</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 StudyNest. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
